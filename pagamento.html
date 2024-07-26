@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Página de Pagamento</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+.container {
+max-width: 600px;
+margin: 0 auto;
+}
+.progress-bar {
+width: 100%;
+background-color: #f3f3f3;
+border-radius: 5px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+height: 20px;
+background-color: #4caf50;
+width: 0%;
+transition: width 0.3s;
+}
+.block {
+display: none;
+margin-bottom: 20px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.block.active {
+display: block;
+}
+.block h2 {
+margin-top: 0;
+}
+.block input, .block select, .block button {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="progress-bar">
+<div class="progress-bar-fill" id="progressBar"></div>
+</div>
+<div id="dadosBlock" class="block active">
+<h2>Dados</h2>
+<label for="nome">Nome:</label>
+<input type="text" id="nome" required>
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+<button onclick="nextBlock('produtoBlock',
+
+33.33)">Próximo</button>
+</div>
+<div id="produtoBlock" class="block">
+
+<h2>Carrinho</h2>
+<div id="cart-items"></div>
+<button onclick="nextBlock('pagarBlock',
+66.66)">Próximo</button>
+</div>
+<div id="pagarBlock" class="block">
+<h2>Pagar</h2>
+<p>Revisar dados e finalizar pagamento</p>
+<button onclick="submitPayment()">Pagar</button>
+</div>
+</div>
+<script>
+function nextBlock(nextBlockId, progress) {
+const currentBlock = document.querySelector('.block.active');
+const inputs = currentBlock.querySelectorAll('input, select');
+let isValid = true;
+inputs.forEach(input => {
+if (!input.value) {
+isValid = false;
+input.style.borderColor = 'red';
+} else {
+input.style.borderColor = '';
+}
+});
+if (isValid) {
+currentBlock.classList.remove('active');
+
+document.getElementById(nextBlockId).classList.add('active');
+
+updateProgressBar(progress);
+}
+}
+function updateProgressBar(progress) {
+document.getElementById('progressBar').style.width = progress +
+'%';
+}
+function submitPayment() {
+updateProgressBar(100);
+
+alert('Pagamento realizado com sucesso!');
+}
+document.addEventListener('DOMContentLoaded', () => {
+const cartItemsContainer = document.getElementById('cart-items');
+const pagar = JSON.parse(localStorage.getItem('pagar')) || [];
+if (pagar.length === 0) {
+cartItemsContainer.innerText = 'O carrinho está vazio.';
+} else {
+pagar.forEach(produto => {
+const itemElemento = document.createElement('div');
+itemElemento.className = 'cart-item';
+itemElemento.innerText = `${produto.name} -
+
+$${produto.price}`;
+
+cartItemsContainer.appendChild(itemElemento);
+});
+}
+});
+</script>
+</body>
+</html>

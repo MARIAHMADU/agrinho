@@ -1,0 +1,126 @@
+header{
+    background-color:#FFC4E2;
+    display: flex
+}
+
+.info{margin-left: 40%;}
+
+body{background-color: #f8e2ed;}     
+
+.HE{margin-left: 4%;
+font-size: 150%;}
+
+.tex1{font-size: 150%;
+margin-left: 2%;}
+
+.RE{margin-left: 2%;
+font-size: 160%;
+padding: 2%;
+}
+
+.tex2{font-size: 150%;
+margin-left: 2%;
+}
+.Henna{width:150px;
+    height: 150px;
+    display: flex 40%;
+    margin-left: 5%;}
+
+    .remo{width:150px;
+        height: 150px;
+        display: flex 40%;
+        margin-left: 5%;}
+
+.texto{
+    display: flex;
+}
+
+.texto2{
+    display: flex;
+}
+
+    .mix{margin-left: 2%;
+        font-size: 160%;
+        padding: 2%;}
+
+        .mixer{width:150px;
+            height: 150px;
+            display: flex 40%;
+            margin-left: 5%;}
+
+.text3{font-size: 150%;
+    margin-left: 2%;}
+
+.texto3{display: flex;}
+
+.esc{margin-left: 2%;
+    font-size: 160%;
+    padding: 2%;}
+
+.texto4{display: flex;}
+
+.esco{width:150px;
+    height: 150px;
+    display: flex 40%;
+    margin-left: 5%;}
+
+.text4{font-size: 150%;
+    margin-left: 2%;}
+
+
+.pot{margin-left: 2%;
+    font-size: 160%;
+    padding: 2%;}
+
+.texto5{display: flex;}
+
+.pote{width:150px;
+    height: 150px;
+    display: flex 40%;
+    margin-left: 5%;}
+
+        .text5{font-size: 150%;
+            margin-left: 2%;}
+
+
+ .PUM{margin-left: 2%;
+    font-size: 160%;
+    padding: 2%;}
+
+    .texto6{display: flex;}
+
+    .pump{width:150px;
+        height: 150px;
+        display: flex 40%;
+        margin-left: 5%}
+
+        .text6{font-size: 150%;
+            margin-left: 2%;}
+ .sabo{margin-left: 2%;
+     font-size: 160%;
+      padding: 2%;}
+
+.texto7{display: flex;}
+
+.sabonete{width:150px;
+        height: 150px;
+        display: flex 40%;
+        margin-left: 5%}
+
+.text7{font-size: 150%;
+    margin-left: 2%;}
+
+.lap{margin-left: 2%;
+        font-size: 160%;
+        padding: 2%;}
+
+.texto8{display: flex;}
+
+.lapis{width:150px;
+        height: 150px;
+        display: flex 40%;
+        margin-left: 5%}
+
+.text8{font-size: 150%;
+            margin-left: 2%;}
+        

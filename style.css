@@ -1,0 +1,60 @@
+header{
+    background-color:#FFC4E2;
+    display: flex;
+}
+.img1{  width:400px; /**imagem do titulo**/
+height: 400px;
+display: flex 40%;
+margin-left: 40%;}
+
+.fl{font-size: 150%; /**cabeçalho**/
+margin-top: 100px;
+margin-left: 230px;}
+
+.rr{font-size: 150%; /**cabeçalho**/
+margin-top: 100px;
+margin-left: 450px;
+}
+
+.nu{font-size: 100%;/**numero para contato**/
+margin-top: 100px;
+margin-left: 300px;}
+
+
+.linha{  /**cabeçalho dos produtos**/
+    display: flex;
+
+}
+.bloco{
+    padding-left: 7%;
+    text-align: center;
+}
+.mixer{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+.he{font-size: 15PX; /**nomes dos produtos**/
+}
+.preco{
+    font-size: 24px;
+}
+
+
+
+
+.preços{display: flex; /**preços**/}
+
+.nome{display: flex;}
+
+body{background-color: #f8e2ed;}     
+
+
+.compra{
+     /**imagem do titulo**/
+     margin-left: 20%;
+     text-decoration: none;
+     padding: 120px;
+    font-size: 16px;}
+  
+
